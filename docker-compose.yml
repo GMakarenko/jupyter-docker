@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  notebook:
+    image: nup/research-notebooks
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./notebooks:/opt/notebooks
+    networks:
+      - default
+    ports:
+      - 80:8888
