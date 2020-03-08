@@ -1,3 +1,5 @@
+# These are the commands:
+
 build:
 	docker-compose build
 
